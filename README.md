@@ -27,7 +27,7 @@ NOTE:  The schedule is in flux and subject to change.
 
 | # | Date | Lecturer | Topic | Readings |
 |---|------|----------|-------|----------|
-| 1 | 2/10 | Neha and Silvio | Introduction. Signatures, hashing, Merkle trees, e-cash, and motivation | [Certificate Transparency](https://www.certificate-transparency.org/) |
+| 1 | 2/10 | Neha and Silvio | Introduction. Signatures, hashing, Merkle trees, e-cash, and motivation | |
 | 2 | 2/17 | Neha | Bitcoin: how it works | [whitepaper](https://bitcoin.org/bitcoin.pdf), [SoK sections 1 and 2](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [how it works](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/) |
 | 3 | 2/24 | Neha | Bitcoin: mining and incentives | [script](https://en.bitcoin.it/wiki/Script), [pooled mining](https://en.bitcoin.it/wiki/Pooled_mining), [hardware](https://en.bitcoin.it/wiki/Mining_hardware_comparison) |
 | 4 | 3/3  | Tadge Dryja and Maurice Herlihy | Payment channels and the Lightning Network, concurrency in smart contracts |  |
