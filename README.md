@@ -31,8 +31,8 @@ NOTE:  The schedule is in flux and subject to change.
 | 2 | 2/17 | Neha | Bitcoin: how it works | [whitepaper](https://bitcoin.org/bitcoin.pdf), [SoK sections 1 and 2](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [how it works](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/) |
 | 3 | 2/24 | Neha | Bitcoin: mining and incentives | [script](https://en.bitcoin.it/wiki/Script), [pooled mining](https://en.bitcoin.it/wiki/Pooled_mining), [hardware](https://en.bitcoin.it/wiki/Mining_hardware_comparison) |
 | 4 | 3/3  | Tadge Dryja and Maurice Herlihy | Payment channels and the Lightning Network, concurrency in smart contracts |  |
-| 5 | 3/10 | Joe Bonneau | Alternatives to proof-of-work |  |
-| 6 | 3/17 | abhi shelat and Rafael Pass | Game theoretic analysis of Bitcoin, Fruitchains | [Analysis of the Blockchain Protocol in Asynchronous Networks](http://eprint.iacr.org/2016/454.pdf), [Fruitchains](https://eprint.iacr.org/2016/916.pdf) |
+| 5 | 3/10 | Joe Bonneau | Proof-of-stake and alternatives to proof-of-work |  |
+| 6 | 3/17 | abhi shelat and Rafael Pass | Analysis of Bitcoin, Fruitchains | [Analysis of the Blockchain Protocol in Asynchronous Networks](http://eprint.iacr.org/2016/454.pdf), [Fruitchains](https://eprint.iacr.org/2016/916.pdf) |
 | 7 | 3/24 | TBD | TBD | |
 | - | 3/31 |  | Spring Break -- no class | |
 | 8 | 4/7  | Silvio | Byzantine Agreement | [Byzantine General's Problem](http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf) |
@@ -53,8 +53,9 @@ experimental course. You may form groups of 1-4 students and prepare a
 presentation and a 4 page paper on one of the following:
 
 1.  Design and implement an application or system ([project ideas](projects.md))
-2.  Propose a formalization in this space for a topic that has not been formalized yet  
-3.  Pose and solve an interesting problem
+2.  Add a new feature to an existing system like Bitcoin, Ethereum, or another cryptocurrency or shared ledger implementation
+3.  Propose a formalization in this space for a topic that has not been formalized yet  
+4.  Pose and solve an interesting problem
 
 ## Readings and Resources
 
@@ -68,3 +69,5 @@ presentation and a 4 page paper on one of the following:
 * [Byzantine General's Problem](http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf)
 * [Bitcoin Mining Pools: A Cooperative Game Theoretic Analysis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.695.9873&rep=rep1&type=pdf)
 * [The Economics of Bitcoin Mining, or Bitcoin in the Presence of Adversaries](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.364.5595&rep=rep1&type=pdf)
+* [Analysis of the Blockchain Protocol in Asynchronous Networks](http://eprint.iacr.org/2016/454.pdf)
+* [Fruitchains](https://eprint.iacr.org/2016/916.pdf)
