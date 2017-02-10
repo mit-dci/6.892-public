@@ -62,7 +62,7 @@ presentation and a 4 page paper on one of the following:
 * [Bitcoin whitepaper](https://bitcoin.org/bitcoin.pdf)
 * [How the Bitcoin Protocol Actually Works](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/)
 * [Bitcoin Systemization of Knowledge](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf)
-* [Princeton textbook](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf)
+* [Princeton textbook](http://bitcoinbook.cs.princeton.edu/) ([pre-published online verison](https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf))
 * [Princeton class](https://piazza.com/princeton/spring2015/btctech/resources)
 * [Stanford class](https://crypto.stanford.edu/cs251/syllabus.html)
 * [UIUC class](http://soc1024.ece.illinois.edu/teaching/ece598am/fall2016/)
