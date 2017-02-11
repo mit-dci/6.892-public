@@ -13,6 +13,10 @@ Place:  36-155
 
 Contact: [6.892-sp17-staff@mit.edu](6.892-sp17-staff@mit.edu)
 
+You are welcome to contact us via email.  However, if you think your
+question would be useful for others to see, please file it as [an issue](https://github.com/mit-dci/6.892-public/issues)
+in this repository!
+
 Description: This course is about the principles and core techniques
 of shared public ledgers, with an emphasis on Bitcoin and distributed
 consensus.  Topics include Bitcoin, Byzantine agreement, authenticated
