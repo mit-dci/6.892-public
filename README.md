@@ -29,22 +29,27 @@ techniques to implement a shared public ledger.
 
 NOTE:  The schedule is in flux and subject to change.
 
-| # | Date | Lecturer | Topic | Readings |
-|---|------|----------|-------|----------|
-| 1 | 2/10 | Neha and Silvio | Introduction. Signatures, hashing, hash chains, e-cash, and motivation | [Untraceable Electronic Cash](http://www.wisdom.weizmann.ac.il/~/naor/PAPERS/untrace.pdf) |
-| 2 | 2/17 | Neha | Bitcoin: how it works | [whitepaper](https://bitcoin.org/bitcoin.pdf), [SoK sections 1, 2, and 4](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [how it works](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/), [script](https://en.bitcoin.it/wiki/Script) |
-| 3 | 2/24 | Neha | Bitcoin: mining and incentives | [SoK sections 3 and 5](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [pooled mining](https://en.bitcoin.it/wiki/Pooled_mining), [hardware](https://en.bitcoin.it/wiki/Mining_hardware_comparison) |
-| 4 | 3/3  | Tadge Dryja and Maurice Herlihy | Payment channels and the Lightning Network, concurrency in smart contracts | [Adding Concurrency to Smart Contracts](readings/adding_concurrency.pdf) |
-| 5 | 3/10 | Joe Bonneau | Proof-of-stake and alternatives to proof-of-work | [On Stake and Consensus](https://download.wpsoftware.net/bitcoin/pos.pdf) |
-| 6 | 3/17 | abhi shelat and Rafael Pass | Analysis of Bitcoin, Fruitchains | [Analysis of the Blockchain Protocol in Asynchronous Networks](http://eprint.iacr.org/2016/454.pdf), [Fruitchains](https://eprint.iacr.org/2016/916.pdf) |
-| 7 | 3/24 | Alessandro Chiesa and Madars Virza | SNARKs and Zerocash | |
-| - | 3/31 |  | Spring Break -- no class | |
-| 8 | 4/7  | Silvio | Byzantine Agreement | [Byzantine General's Problem](http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf) |
-| 9 | 4/14 | Silvio | Algorand | |
-| 10 | 4/21 | Silvio | Algorand | |
-| 11 | 4/28 | Silvio | Algorand | |
-| 12 | 5/5 | | Special topics |  |
-| 13 | 5/12 |  | Special topics |  |  |
+We are occasionally providing our lecture notes in the interest of
+transparency.  Note that they are rough, probably have mistakes, and
+are almost definitely incomplete.  In addition, they might not
+accurately reflect what happened in class.  Use at your own risk!
+
+| # | Date | Lecturer | Topic | Readings | Lecture Notes |
+|---|------|----------|-------|----------|---------------|
+| 1 | 2/10 | Neha and Silvio | Introduction. Signatures, hashing, hash chains, e-cash, and motivation | [Untraceable Electronic Cash](http://www.wisdom.weizmann.ac.il/~/naor/PAPERS/untrace.pdf) | [lecture 1 notes](lecture_notes/lecture1_02_10.pdf) |
+| 2 | 2/17 | Neha | Bitcoin: how it works | [whitepaper](https://bitcoin.org/bitcoin.pdf), [SoK sections 1, 2, and 4](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [how it works](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/), [script](https://en.bitcoin.it/wiki/Script) | |
+| 3 | 2/24 | Neha | Bitcoin: mining and incentives | [SoK sections 3 and 5](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [pooled mining](https://en.bitcoin.it/wiki/Pooled_mining), [hardware](https://en.bitcoin.it/wiki/Mining_hardware_comparison) | |
+| 4 | 3/3  | Tadge Dryja and Maurice Herlihy | Payment channels and the Lightning Network, concurrency in smart contracts | [Adding Concurrency to Smart Contracts](readings/adding_concurrency.pdf) | |
+| 5 | 3/10 | Joe Bonneau | Proof-of-stake and alternatives to proof-of-work | [On Stake and Consensus](https://download.wpsoftware.net/bitcoin/pos.pdf) | |
+| 6 | 3/17 | abhi shelat and Rafael Pass | Analysis of Bitcoin, Fruitchains | [Analysis of the Blockchain Protocol in Asynchronous Networks](http://eprint.iacr.org/2016/454.pdf), [Fruitchains](https://eprint.iacr.org/2016/916.pdf) | |
+| 7 | 3/24 | Alessandro Chiesa and Madars Virza | SNARKs and Zerocash | | |
+| - | 3/31 |  | Spring Break -- no class | | |
+| 8 | 4/7  | Silvio | Byzantine Agreement | [Byzantine General's Problem](http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf) | |
+| 9 | 4/14 | Silvio | Algorand | | | 
+| 10 | 4/21 | Silvio | Algorand | | |
+| 11 | 4/28 | Silvio | Algorand | | |
+| 12 | 5/5 | | Special topics |  | |
+| 13 | 5/12 |  | Special topics |  |  | |
 
 ## Labs and Problem Sets
 
