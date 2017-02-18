@@ -1,9 +1,10 @@
 # Bitcoin
 
+```
 Date: Feb 17th, 2017
 Lecture: Neha Narula
 Scribe: Nicola Greco
-
+```
 
 Centralized digital cash: What are the problems?
   - Bank has control: it can refuse transactions, controls accounts
