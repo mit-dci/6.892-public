@@ -124,9 +124,9 @@ What is the role of the Bank?
     - the idea is that outputs holds a predicate that must be satisfied by the input
   - Question: How can we split coins?
     - The transaction contains an input that "unlocks" some money in some some previous transaction
-    - The transaction also contains an output whose sum(inputs)-sum(outputs) <= 0.
-  - Question: Why sum(inputs)-sum(outputs) <= 0?
-    - Because some of it is the transaction fee
+    - The transaction also contains an output whose sum(inputs)-sum(outputs) >= 0.
+  - Question: Why sum(inputs)-sum(outputs) >= 0?
+    - Because some of it is the transaction fee (or burnt coins!)
   - Question: Can you choose your transanction fee?
     - Yes you can! That's happened!
   - Question: What happens after the block reward?
