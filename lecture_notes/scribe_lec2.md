@@ -1,0 +1,177 @@
+# Bitcoin
+
+```
+Date: Feb 17th, 2017
+Lecture: Neha Narula
+Scribe: Nicola Greco
+```
+
+Centralized digital cash: What are the problems?
+  - Bank has control: it can refuse transactions, controls accounts
+  - Bank has to agree to provide this service
+  - they are interested in the opposite - in part to regulations
+
+What is the role of the Bank?
+  - Accounting & Validation: preventing double spends
+  - Issuance: adding tokens to the network
+
+## Can we avoid the central bank?
+- **Trial 1: Naive implementation**
+  - Assumptions
+    - limited set of players and number of coins
+    - coins have same value, different identifier
+  - Setting
+    - public set of players: public/private keys (pk_a, sk_a)
+    - public table of coins: [(coin1, pk_a), (coin1, pk_a)]
+    - transactions looks like:
+      - Alice wants to pay Bob: sig_a(c1 -> pk_bob)
+    - Problem: How does Bob tell people that he has this coin?
+      - Maybe we could link back to the transaction in future transactions
+    - Problem: How can we guarantee Alice doesn't double spend that coin?
+      - Everyone broadcasts the transactions
+    - Problem: How can we have common knowledge of transaction?
+      - We need agreement amongst all the nodes!
+- **Trial 2: Permissioned agreement**
+  - (digression) Byzantine Agreement
+    - Protocol with known players, where some nodes are correct, other are faulty
+    - Byzantine protocols rely on the assumption on having an honest majority
+    - Properties:
+      - Finality: Always terminates
+      - Agreement: All correct players agree on the same value v
+      - Consistency: If all players start with initial value v_i=v, then on termination, all correct players agree on v.
+  - Use Byzantine agreement to agree on the transactions, so transactions become common knowledge
+    - Problem: Slow for large amount of participants
+    - Problem: Fixed set of players
+    - Problems: A lot of churn
+  - Question: What about dynamic membership? This would mean that the set of players becomes the bank
+  - Hence, this would not work!
+- **Trial 3: Permissionless**
+  - Assumption: differently from before there is no known list of users
+  - Design needs
+    - Broadcast the messages
+    - Order the messages
+  - Achieving Broadcasting
+    - (digression) Problems with P2P networks
+      - have no global view about the topology of the network
+      - a lot of churn
+      - how to talk to other nodes? gossiping messages around
+      - how to get into the network? knowing one node
+      - can you send a message to the entire network? yes you can
+      - example: Bittorrent, Gnutella
+    - Solution: create a transaction and flood the network, so that everyone knows about the payment
+  - Achieving Global Ordering:
+    - Solution: we can use hashchains to order transactions
+      - new block links backward to the previous block
+      - once we have a hashchain one can go through the log and verify that the coin is real
+    - Forking Problem:
+      - a hashchain can fork and have two heads pointing to the valid chain
+      - different nodes have different views
+      - we cannot use byzantine agreement to vote (we don't know the set of nodes)
+- **Trial 4: Bitcoin**
+  - Idea:
+    - expend some effort called proof of work
+    - make it expensive to make a block
+    - bringing incentives into the system
+    - nodes get rewarded after spending some effort to make a block
+  - (digression) Proof-of-work
+    - H(nonce|prev|transactions) < target
+    - The only way that you can find a hash that is less than that target is by doing different trials
+    - it is expensive to create two different blocks
+    - whoever finds the hash that results to be < target, gets rewarded
+  - Rewarding scheme
+    - miner includes his public key in the transaction
+    - miner is awarded new tokens + fees in the transaction
+  - Question: How does forking work?
+    - Adversary construct:
+      - Bob does a transaction that sends to Alice
+      - Bob spends the same coin to himself
+      - Bob mines two blocks
+    - In order for Bob to do this, he has to spend time and energy
+    - How to fix this?
+      - Alice only accepts the transactions only after a few blocks
+      - In order for Bob to write a parallel long chain he will have to create all the other blocks
+  - Question: When there is a fork, who choses which fork is the correct one?
+    - Always choose the longest tree
+  - Question: What does majority means?
+    - Majority of hash power! Hash/s
+    - On average someone ends up finding the hash every 10 minutes (poisson process)
+      - time to find the block = 10 mins /(my fraction of hashing power in the system)
+      - expected number blocks mined is on expectation my percentage of mining
+
+## How does Bitcoin work?
+- Limited number of tokens 21 millions
+- Supply ends in 2140
+- In 2012: 25 bitcoin rewards, 12.5 in 2016, ...
+- **Bitcoin Ecosystem**: Why don't the miners just decide to issue more Bitcoins that the protocols wants?
+  - Miners: work to produce blocks
+  - Full node: do not produce blocks but run nodes to validate blocks
+  - Users: just users!
+- **Bitcoin rules**:
+  - issuance schedule
+  - no double spending
+  - block format
+  - valid proof of work
+  - transaction format
+  - scripts
+- **Bitcoin transactions**:
+  - naive: (pk_b, sig_a(c -> pk_b))
+  - coins are consumed in their entirity (eliminated and created, never passed along)
+  - transaction have: inputs & outputs
+    - inputs: hash of previous transaction, index, script signature
+      - the input specifies the input you are consuming
+    - outputs: value, script pubkey(condition or predicate that must be satisfied) (utxos)
+      - the output is
+    - the idea is that outputs holds a predicate that must be satisfied by the input
+  - Question: How can we split coins?
+    - The transaction contains an input that "unlocks" some money in some some previous transaction
+    - The transaction also contains an output whose sum(inputs)-sum(outputs) >= 0.
+  - Question: Why sum(inputs)-sum(outputs) >= 0?
+    - Because some of it is the transaction fee (or burnt coins!)
+  - Question: Can you choose your transanction fee?
+    - Yes you can! That's happened!
+  - Question: What happens after the block reward?
+    - Open question!
+  - Question: How do I know how much money I have?
+    - Look at the UTXO, the unspent transactions
+  - Question: Why criminals use it?
+    - Transactions can't censor it
+    - Otherwise it is a bad idea
+  - Question: 51???????????????
+    - Not guaranteed. Open Problem
+  - Question: How does this scale?
+    - This does not scale!
+- **Payment to Public Key hash (P2PKH)**
+  - Output (from tx1)
+    - OP_DUP (put into stack)
+    - OP_HASH160 (po the stack and hash that)
+    - <H(PK_Silvio)> (constant and loaded into the stack) <- bitcoin address
+    - OP_EQUALVERIFY (pop two things off the stack & check)
+    - OP_CHECKSIG (pops two things, check the signature of the transaction with public key)
+  - Input (from tx2)
+    - 0 (index from the previous transaction)
+    - <sig> <- signature of silvio to prove that he is using it  
+    - <pk_silvio>
+  - How does the node decides this is a valid spend?
+- **Bitcoin P2P network**
+  - User signs a transaction
+  - User propagates this transaction to miners
+  - Because it is a valid transaction nodes will relay the network
+  - Question: Why do nodes validate? Because of default settings and to keep the network reliable
+  - Why do we incentivize miners?
+  - Why don't we incentivize these propagators?
+    - altruism
+    - nodes are willing to share
+    - they do very little work
+    - relay transactions are actually more strictly validated
+  - Is there any incentives to pass the block to other miners?
+- **Bitcoin Scripting Language**
+  - It is simple and easily analyzable?
+  - You pay fees proportionally to the cost of the transaction
+  - "Anyone can spend" (OP_TRUE, empty pub key)
+  - "Unspendable output" (OP_RETURN) <- burning money
+  - "Escrow" (multiple signatures needed to do a transaction m out of n) <- to mediate disputes
+
+## Recap
+- Motivate Bitcoin for permissionless payment systems
+- Nakamoto's consensus adds incentives idea for miners
+- How transactions are formed and scripting langage
