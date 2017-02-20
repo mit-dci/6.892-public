@@ -9,7 +9,7 @@ Instructors:  Neha Narula ([narula@media.mit.edu](narula@media.mit.edu)) and Sil
 
 Time:  Fridays 1-4 PM 
 
-Place:  36-155 
+Place:  ~~36-155~~ 4-163
 
 Contact: [6.892-sp17-staff@mit.edu](6.892-sp17-staff@mit.edu)
 
@@ -37,7 +37,7 @@ accurately reflect what happened in class.  Use at your own risk!
 | # | Date | Lecturer | Topic | Readings | Lecture Notes |
 |---|------|----------|-------|----------|---------------|
 | 1 | 2/10 | Neha and Silvio | Introduction. Signatures, hashing, hash chains, e-cash, and motivation | [Untraceable Electronic Cash](http://www.wisdom.weizmann.ac.il/~/naor/PAPERS/untrace.pdf) | [lecture 1 notes](lecture_notes/lecture1_02_10.pdf) |
-| 2 | 2/17 | Neha | Bitcoin: how it works | [whitepaper](https://bitcoin.org/bitcoin.pdf), [SoK sections 1, 2, and 4](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [how it works](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/), [script](https://en.bitcoin.it/wiki/Script) | |
+| 2 | 2/17 | Neha | Bitcoin: how it works | [whitepaper](https://bitcoin.org/bitcoin.pdf), [SoK sections 1, 2, and 4](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [how it works](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/), [script](https://en.bitcoin.it/wiki/Script) | [scribed lecture 2 notes](lecture_notes/scribe_lec2.md) |
 | 3 | 2/24 | Neha | Bitcoin: mining and incentives | [SoK sections 3 and 5](http://www.jbonneau.com/doc/BMCNKF15-IEEESP-bitcoin.pdf), [pooled mining](https://en.bitcoin.it/wiki/Pooled_mining), [hardware](https://en.bitcoin.it/wiki/Mining_hardware_comparison) | |
 | 4 | 3/3  | Tadge Dryja and Maurice Herlihy | Payment channels and the Lightning Network, concurrency in smart contracts | [Adding Concurrency to Smart Contracts](readings/adding_concurrency.pdf) | |
 | 5 | 3/10 | Joe Bonneau | Proof-of-stake and alternatives to proof-of-work | [On Stake and Consensus](https://download.wpsoftware.net/bitcoin/pos.pdf) | |
