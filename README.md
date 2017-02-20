@@ -53,7 +53,7 @@ accurately reflect what happened in class.  Use at your own risk!
 
 ## Labs and Problem Sets
 
-* Lab 1: Bitcoin treasure hunt
+* Lab 1: [Bitcoin treasure hunt](https://github.com/mit-dci/utxohunt)
 
 ## Final Projects
 
