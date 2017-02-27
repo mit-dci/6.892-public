@@ -1,11 +1,16 @@
-Incentives in Bitcoin
+# Incentives in Bitcoin
+
+```
+Lecturer: Neha Narula
+Scribe: Nicola Greco
+```
 
 Topics
 - Clients
 - Mining
 - Forks
 
-**Payment Verification Problem**
+## Payment Verification Problem**
 - Alice generates a transactions and sends it to Bob
 - Bob wants to make sure that he received the payment.
 - Bob must check:
@@ -48,7 +53,8 @@ When is that you don't have the network?
 - Selfish miner
 - Someone cut you off from the rest of the network
 
-**Different mining strategies**
+## Different mining strategies
+
 - CPU mining: 20Mh/s
   ```
 mr = make_merkle_tree(txs)
@@ -96,7 +102,7 @@ while (guess a nonce) {
     - Yes, they could but they would loose the economic value of the currency!
     - However, they could throw a Gold Finger attack: "I just want to destroy Bitcoin"
 
-**Forks**
+## Forks
 - When do we need to change the rules?
   - Fixing bugs
   - Add new features
