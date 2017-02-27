@@ -10,7 +10,7 @@ Topics
 - Mining
 - Forks
 
-## Payment Verification Problem**
+## Payment Verification Problem
 - Alice generates a transactions and sends it to Bob
 - Bob wants to make sure that he received the payment.
 - Bob must check:
