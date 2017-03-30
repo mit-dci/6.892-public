@@ -42,7 +42,7 @@ accurately reflect what happened in class.  Use at your own risk!
 | 4 | 3/3  | Maurice Herlihy and Tadge Dryja | Concurrency in smart contracts, payment channels and the Lightning Network | [Adding Concurrency to Smart Contracts](readings/adding_concurrency.pdf) | |
 | 5 | 3/10 | Joe Bonneau | Proof-of-stake and alternatives to proof-of-work | [On Stake and Consensus](https://download.wpsoftware.net/bitcoin/pos.pdf) | |
 | 6 | 3/17 | abhi shelat and Rafael Pass | Analysis of Bitcoin, Fruitchains | [Analysis of the Blockchain Protocol in Asynchronous Networks](http://eprint.iacr.org/2016/454.pdf), [Fruitchains](https://eprint.iacr.org/2016/916.pdf) | |
-| 7 | 3/24 | Alessandro Chiesa and Madars Virza | SNARKs and Zerocash | | |
+| 7 | 3/24 | Alessandro Chiesa and Madars Virza | SNARKs and Zerocash | Zerocash: [conference version](http://zerocash-project.org/media/pdf/zerocash-oakland2014.pdf), [more detailed full version](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf) | [snarks slides](lecture_notes/snarks.pdf), [zerocash slides](lecture_notes/zerocash.pdf) |
 | - | 3/31 |  | Spring Break -- no class | | |
 | 8 | 4/7  | Silvio | Byzantine Agreement | [Byzantine General's Problem](http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf) | |
 | 9 | 4/14 | Silvio | Algorand | | | 
