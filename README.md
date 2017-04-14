@@ -54,7 +54,7 @@ accurately reflect what happened in class.  Use at your own risk!
 ## Labs and Problem Sets
 
 * Lab 1: [Bitcoin treasure hunt](https://github.com/mit-dci/utxohunt)
-* Problem set 1: [Byzantine Agreement](homework/BA/homework.pdf), [Dolev-Strong](homework/BA/dolev-strong.pdf), [definitions](homework/BA/notion.pdf)
+* Problem set 1: [Byzantine Agreement](homework/BA/Homework.pdf), [Dolev-Strong](homework/BA/dolev-strong.pdf), [definitions](homework/BA/notion.pdf)
 
 ## Final Projects
 
