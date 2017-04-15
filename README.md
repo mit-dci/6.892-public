@@ -45,7 +45,7 @@ accurately reflect what happened in class.  Use at your own risk!
 | 7 | 3/24 | Alessandro Chiesa and Madars Virza | SNARKs and Zerocash | Zerocash: [conference version](http://zerocash-project.org/media/pdf/zerocash-oakland2014.pdf), [more detailed full version](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf) | [snarks slides](lecture_notes/snarks.pdf), [zerocash slides](lecture_notes/zerocash.pdf) |
 | - | 3/31 |  | Spring Break -- no class | | |
 | 8 | 4/7  | Silvio | Byzantine Agreement | [Byzantine General's Problem](http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf) | |
-| 9 | 4/14 | Silvio | Algorand | | | 
+| 9 | 4/14 | Silvio | Algorand | | [Byzantine Agreement Made Trivial](lecture_notes/byzantine_agreement_made_trivial.pdf), [Aloni's proof of the need for unpredictable coins](lecture_notes/aloni_proof.pdf) | 
 | 10 | 4/21 | Silvio | Algorand | | |
 | 11 | 4/28 | Silvio | Algorand | | |
 | 12 | 5/5 | | Special topics |  | |
