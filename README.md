@@ -44,17 +44,19 @@ accurately reflect what happened in class.  Use at your own risk!
 | 6 | 3/17 | abhi shelat and Rafael Pass | Analysis of Bitcoin, Fruitchains | [Analysis of the Blockchain Protocol in Asynchronous Networks](http://eprint.iacr.org/2016/454.pdf), [Fruitchains](https://eprint.iacr.org/2016/916.pdf) | |
 | 7 | 3/24 | Alessandro Chiesa and Madars Virza | SNARKs and Zerocash | Zerocash: [conference version](http://zerocash-project.org/media/pdf/zerocash-oakland2014.pdf), [more detailed full version](http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf) | [snarks slides](lecture_notes/snarks.pdf), [zerocash slides](lecture_notes/zerocash.pdf) |
 | - | 3/31 |  | Spring Break -- no class | | |
-| 8 | 4/7  | Silvio | Byzantine Agreement | [Byzantine General's Problem](http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf) | |
-| 9 | 4/14 | Silvio | Algorand | | [Byzantine Agreement Made Trivial](lecture_notes/byzantine_agreement_made_trivial.pdf), [Aloni's proof of the need for unpredictable coins](lecture_notes/aloni_proof.pdf) | 
-| 10 | 4/21 | Silvio | Algorand | | |
+| 8 | 4/7  | Silvio | Byzantine Agreement | [Byzantine General's Problem](http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf) | [Homework](homework/BA/Homework.pdf)|
+| 9 | 4/14 | Silvio | Byzantine Agreement | | [Byzantine Agreement Made Trivial](lecture_notes/byzantine_agreement_made_trivial.pdf), [Aloni's proof of the need for unpredictable coins](lecture_notes/aloni_proof.pdf), [Homework](homework/april14.pdf) | 
+| 10 | 4/21 | Silvio | Algorand, Graded Consensus | | [Homework](homework/april21.pdf), [Homework2](homework/BA-in-parallel.pdf) |
 | 11 | 4/28 | Silvio | Algorand | | |
 | 12 | 5/5 | | Special topics |  | |
-| 13 | 5/12 |  | Special topics |  |  | |
+| 13 | 5/12 |  | Final project presentations |  |  | |
 
 ## Labs and Problem Sets
 
 * Lab 1: [Bitcoin treasure hunt](https://github.com/mit-dci/utxohunt)
 * Problem set 1: [Byzantine Agreement](homework/BA/Homework.pdf), [Dolev-Strong](homework/BA/dolev-strong.pdf), [definitions](homework/BA/notion.pdf)
+* Problem set 2: [April 14](homework/april14.pdf)
+* Problem set 3: [April 21](homework/april21.pdf), [Parallel BBA*](homework/BA-in-parallel.pdf)
 
 ## Final Projects
 
