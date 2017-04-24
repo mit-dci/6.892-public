@@ -53,6 +53,8 @@ accurately reflect what happened in class.  Use at your own risk!
 
 ## Labs and Problem Sets
 
+<b>Submission instructions</b>: For problem sets, email your solutions to 6.892-sp17-staff@mit.edu
+
 * Lab 1: [Bitcoin treasure hunt](https://github.com/mit-dci/utxohunt)
 * Problem set 1: [Byzantine Agreement](homework/BA/Homework.pdf), [Dolev-Strong](homework/BA/dolev-strong.pdf), [definitions](homework/BA/notion.pdf)
 * Problem set 2: [April 14](homework/april14.pdf)
