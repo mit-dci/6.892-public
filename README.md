@@ -49,7 +49,7 @@ accurately reflect what happened in class.  Use at your own risk!
 | 10 | 4/21 | Silvio | Algorand, Graded Consensus | | [Homework](homework/april21.pdf), [Homework2](homework/BA-in-parallel.pdf) |
 | 11 | 4/28 | Silvio | Algorand | | |
 | 12 | 5/5 | | Special topics |  | |
-| 13 | 5/12 |  | Final project presentations |  |  | |
+| 13 | 5/12 | Neha | Correlated failures.  Final project presentations |  |  | |
 
 ## Labs and Problem Sets
 
